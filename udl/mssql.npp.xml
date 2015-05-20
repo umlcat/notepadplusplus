@@ -1,0 +1,529 @@
+<NotepadPlus>
+    <UserLang name="Microsoft Transact S.Q.L." ext="mssql tsql" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="2"/>
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="yes" Keywords6="yes" Keywords7="yes" Keywords8="yes"/>
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00-- 01 02 03/* 04*/</Keywords>
+            <Keywords name="Numbers, prefix1"/>
+            <Keywords name="Numbers, prefix2"/>
+            <Keywords name="Numbers, extras1"/>
+            <Keywords name="Numbers, extras2"/>
+            <Keywords name="Numbers, suffix1"/>
+            <Keywords name="Numbers, suffix2"/>
+            <Keywords name="Numbers, range"/>
+            <Keywords name="Operators1">+ - * / % = &amp; | ^ = &gt; &lt; &gt;= &lt;= &lt;&gt;  != !&lt; !&gt;  += -= *= /= %= &amp;= ^= |= :: ~ ; , ( )</Keywords>
+            <Keywords name="Operators2">all and any between exists in like not or some except intersect union</Keywords>
+            <Keywords name="Folders in code1, open">begin</Keywords>
+            <Keywords name="Folders in code1, middle"/>
+            <Keywords name="Folders in code1, close">end</Keywords>
+            <Keywords name="Folders in code2, open"/>
+            <Keywords name="Folders in code2, middle"/>
+            <Keywords name="Folders in code2, close"/>
+            <Keywords name="Folders in comment, open"/>
+            <Keywords name="Folders in comment, middle"/>
+            <Keywords name="Folders in comment, close"/>
+            <Keywords name="Keywords1">add
+all
+alter
+and
+any
+as
+asc
+authorization
+backup
+begin
+between
+break
+browse
+bulk
+by
+cascade
+case
+catch
+check
+checkpoint
+close
+clustered
+coalesce
+collate
+column
+commit
+compute
+constraint
+contains
+containstable
+continue
+convert
+create
+cross
+current
+current_date
+current_time
+current_timestamp
+current_user
+cursor
+database
+dbcc
+deallocate
+declare
+default
+delete
+deny
+desc
+disk
+distinct
+distributed
+double
+drop
+dump
+else
+end
+errlvl
+escape
+except
+exec
+execute
+exists
+exit
+external
+fetch
+file
+fillfactor
+for
+foreign
+freetext
+freetexttable
+from
+full
+function
+goto
+grant
+group
+having
+holdlock
+identity
+identity_insert
+identitycol
+if
+in
+index
+inner
+insert
+intersect
+into
+is
+join
+key
+kill
+left
+like
+lineno
+load
+merge
+national
+nocheck
+nonclustered
+not
+null
+nullif
+of
+off
+offsets
+on
+open
+opendatasource
+openquery
+openrowset
+openxml
+option
+or
+order
+outer
+over
+percent
+pivot
+plan
+precision
+primary
+print
+proc
+procedure
+public
+raiserror
+read
+readtext
+reconfigure
+references
+replication
+restore
+restrict
+return
+revert
+revoke
+right
+rollback
+rowcount
+rowguidcol
+rule
+save
+schema
+securityaudit
+select
+session_user
+set
+setuser
+shutdown
+some
+statistics
+system_user
+table
+tablesample
+textsize
+then
+to
+top
+tran
+transaction
+try
+trigger
+truncate
+tsequal
+union
+unique
+unpivot
+update
+updatetext
+use
+user
+values
+varying
+view
+waitfor
+when
+where
+while
+with
+writetext
+</Keywords>
+            <Keywords name="Keywords2">@@connections
+@@cpu_busy
+@@cursor_rows
+@@datefirst
+@@datefirst
+@@dbts
+@@error
+@@fetch_status
+@@identity
+@@idle
+@@io_busy
+@@langid
+@@language
+@@language
+@@lock_timeout
+@@max_connections
+@@max_precision
+@@nestlevel
+@@options
+@@pack_received
+@@pack_received
+@@pack_sent
+@@packet_errors
+@@procid
+@@remserver
+@@rowcount
+@@servername
+@@servicename
+@@spid
+@@textsize
+@@timeticks
+@@total_errors
+@@total_read
+@@total_write
+@@trancount
+@@version
+abs
+acos
+app_name
+applock_mode
+applock_test
+ascii
+asin
+assemblyproperty
+asymkey_id
+atan
+atn2
+binary_checksum
+cast and convert
+ceiling
+cert_id
+certproperty
+char
+charindex
+checksum
+col_length
+col_name
+columnproperty
+columns_updated
+connectionproperty
+context_info
+cos
+cot
+current_request_id
+current_timestamp
+current_user 
+cursor_status
+database_principal_id 
+database_principal_id
+databasepropertyex
+datalength 
+dateadd
+datediff
+datename
+datepart
+day
+db_id
+db_name
+decryptbyasmkey
+decryptbycert
+decryptbykey
+decryptbykeyautocert
+decryptbypassphrase
+degrees
+difference
+encryptbyasmkey
+encryptbycert
+encryptbykey
+encryptbypassphrase
+error_line
+error_message
+error_number
+error_procedure
+error_severity
+error_state
+eventdata
+exp
+file_id
+file_idex
+file_name
+filegroup_id
+filegroup_name
+filegroupproperty
+fileproperty
+floor
+fn_virtualfilestats
+formatmessage
+fulltextcatalogproperty
+fulltextserviceproperty
+get_filestream_transaction_context
+getansinull
+getdate
+getutcdate
+has_perms_by_name 
+hashbytes
+host_id
+host_name
+ident_current 
+ident_incr 
+ident_seed 
+identity 
+index_col
+indexkey_property
+indexproperty
+is_member 
+is_srvrolemember 
+isdate
+isnull
+isnumeric
+key_guid
+key_id
+left
+len
+log
+log10
+lower
+ltrim
+min_active_rowversion
+month
+nchar
+newid
+newsequentialid
+next value for
+object_definition
+object_id
+object_name
+object_schema_name
+objectproperty
+objectpropertyex
+original_db_name
+original_login 
+parsename
+pathname
+patindex
+patindex
+permissions 
+pi
+power
+publishingservername
+pwdcompare 
+pwdencrypt 
+quotename
+radians
+rand
+replace
+replicate
+reverse
+right
+round
+rtrim
+schema_id 
+schema_id
+schema_name 
+schema_name
+scope_identity
+serverproperty
+session_user 
+set datefirst
+set dateformat
+set language
+sign
+signbyasymkey
+signbycert
+sin
+soundex
+sp_helplanguage
+space
+sql_variant_property 
+sqrt
+square
+stats_date
+str
+stuff
+substring
+suser_id 
+suser_name 
+suser_sid 
+suser_sname 
+switchoffset
+sys.fn_builtin_permissions 
+sys.fn_my_permissions 
+sysdatetime
+sysdatetime
+sysdatetimeoffset
+sysdatetimeoffset
+system_user 
+sysutcdatetime
+tan
+textptr
+textvalid
+todatetimeoffset
+trigger_nestlevel
+type_id
+type_name
+typeproperty
+unicode
+update
+upper
+user_id 
+user_name 
+verifysignedbyasmkey
+verifysignedbycert
+xact_state
+year
+</Keywords>
+            <Keywords name="Keywords3">bigint
+binary
+bit
+char
+cursor
+date
+datetime
+datetime2
+datetimeoffset
+decimal
+float
+hierarchyid
+image
+int
+money
+nchar
+ntext
+numeric
+nvarchar
+real
+smalldatetime
+smallint
+smallmoney
+sql_variant
+table
+text
+time
+timestamp
+tinyint
+uniqueidentifier
+varbinary
+varchar
+xml
+</Keywords>
+<Keywords name="Keywords4">avg
+checksum_agg
+containstable
+count
+count_big
+dense_rank
+freetexttable
+grouping
+grouping_id
+max
+min
+ntile
+opendatasource
+openquery
+openrowset
+openxml
+over cLAUSE
+rank
+row_number
+rowcount_big
+stdev
+stdevp
+sum
+var
+varp
+
+</Keywords>
+            <Keywords name="Keywords5">@@</Keywords>
+            <Keywords name="Keywords6">@</Keywords>
+            <Keywords name="Keywords7">##</Keywords>
+            <Keywords name="Keywords8">#</Keywords>
+            <Keywords name="Delimiters">00' 01 02' 03[ 04 05] 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="COMMENTS" fgColor="808080" bgColor="FFFFFF" fontStyle="3" nesting="0"/>
+            <WordsStyle name="LINE COMMENTS" fgColor="808080" bgColor="FFFFFF" fontStyle="3" nesting="0"/>
+            <WordsStyle name="NUMBERS" fgColor="800000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="KEYWORDS1" fgColor="0000A0" bgColor="FFFFFF" fontStyle="5" nesting="0"/>
+            <WordsStyle name="KEYWORDS2" fgColor="FF00FF" bgColor="FFFFFF" fontStyle="1" nesting="0"/>
+            <WordsStyle name="KEYWORDS3" fgColor="000000" bgColor="FFFFFF" fontStyle="5" nesting="0"/>
+            <WordsStyle name="KEYWORDS4" fgColor="FF00FF" bgColor="FFFFFF" fontStyle="4" nesting="0"/>
+            <WordsStyle name="KEYWORDS5" fgColor="008040" bgColor="FFFFFF" fontStyle="1" nesting="0"/>
+            <WordsStyle name="KEYWORDS6" fgColor="00B900" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontStyle="5" nesting="0"/>
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontStyle="4" nesting="0"/>
+            <WordsStyle name="OPERATORS" fgColor="952BFF" bgColor="FFFFFF" fontStyle="1" nesting="0"/>
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000080" bgColor="FFFFFF" fontStyle="5" nesting="0"/>
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS1" fgColor="FF0000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS2" fgColor="000000" bgColor="FFFFFF" fontStyle="4" nesting="0"/>
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0"/>
+        </Styles>
+    </UserLang>
+</NotepadPlus>
